@@ -19,33 +19,32 @@ export function Newsletter() {
   };
 
   return (
-    <section className="py-12 md:py-16">
+    <section className="bg-white py-14 md:py-20">
       <Container>
-        <div className="relative overflow-hidden rounded-xl px-6 py-12 text-center md:px-16 md:py-16">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-purple-900" />
-          <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/5" />
-          <div className="absolute -bottom-10 -left-10 h-32 w-32 rounded-full bg-accent/10" />
-          <div className="relative">
-            <h2 className="text-2xl font-semibold tracking-tight text-white md:text-3xl">{newsletter.title}</h2>
-            <p className="mx-auto mt-3 max-w-lg text-white/80">{newsletter.description}</p>
-            {submitted ? (
-              <p className="mt-8 text-sm font-medium text-accent">Thank you for subscribing!</p>
-            ) : (
-              <form onSubmit={handleSubmit} className="mx-auto mt-8 flex max-w-md flex-col gap-3 sm:flex-row">
-                <Input
-                  type="email"
-                  placeholder={newsletter.placeholder}
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  className="flex-1 border-white/20 bg-white/10 text-white placeholder:text-white/50 backdrop-blur-sm"
-                />
-                <Button type="submit" size="lg" variant="accent" className="shrink-0">
-                  {newsletter.buttonText}
-                </Button>
-              </form>
-            )}
+        <div className="grid items-center gap-8 border border-border bg-muted/40 px-6 py-10 md:grid-cols-[1.2fr_1fr] md:px-12 md:py-14">
+          <div>
+            <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-primary">Newsletter</p>
+            <h2 className="font-display mt-3 text-3xl font-bold tracking-tight md:text-4xl">{newsletter.title}</h2>
+            <p className="mt-3 max-w-md text-muted-foreground">{newsletter.description}</p>
           </div>
+          {submitted ? (
+            <p className="text-sm font-semibold text-primary">You&apos;re on the list. Thanks for joining.</p>
+          ) : (
+            <form onSubmit={handleSubmit} className="flex flex-col gap-3 sm:flex-row">
+              <Input
+                type="email"
+                placeholder={newsletter.placeholder}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                aria-label="Email address"
+                className="flex-1 bg-white"
+              />
+              <Button type="submit" size="lg" className="shrink-0">
+                {newsletter.buttonText}
+              </Button>
+            </form>
+          )}
         </div>
       </Container>
     </section>

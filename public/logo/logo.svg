@@ -1,41 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="220" height="44" viewBox="0 0 220 44" fill="none">
-  <defs>
-    <linearGradient id="logo-mark-bg" x1="2" y1="2" x2="38" y2="42" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#8B5CF6"/>
-      <stop offset="1" stop-color="#6D28D9"/>
-    </linearGradient>
-  </defs>
-  <!-- Favicon mark -->
-  <rect x="0" y="2" width="40" height="40" rx="10" fill="url(#logo-mark-bg)"/>
-  <rect x="6" y="30" width="28" height="3.5" rx="1.75" fill="#F59E0B"/>
-  <text
-    x="20"
-    y="21"
-    text-anchor="middle"
-    dominant-baseline="middle"
-    fill="#FFFFFF"
-    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
-    font-size="14"
-    font-weight="800"
-    letter-spacing="-0.7"
-  >AAM</text>
-  <!-- Wordmark -->
-  <text
-    x="50"
-    y="19"
-    fill="#6D28D9"
-    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
-    font-size="17"
-    font-weight="800"
-    letter-spacing="-0.4"
-  >AAM Partners</text>
-  <text
-    x="50"
-    y="34"
-    fill="#F59E0B"
-    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
-    font-size="10"
-    font-weight="700"
-    letter-spacing="2.2"
-  >LLC</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="40" viewBox="0 0 240 40" fill="none">
+  <rect width="32" height="32" y="4" rx="4" fill="#1E54F4"/>
+  <path d="M10 14.5h8.5c2.6 0 4.6 1.9 4.6 4.5s-2 4.5-4.6 4.5H14v5H10V14.5zm4 6h4.2c.9 0 1.5-.7 1.5-1.5s-.6-1.5-1.5-1.5H14v3z" fill="#FFFFFF"/>
+  <text x="42" y="18" fill="#0F1419" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="800" letter-spacing="0.4">GOGETTER</text>
+  <text x="42" y="31" fill="#5B6573" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" font-weight="650" letter-spacing="2.4">ENTERPRISES LLC</text>
 </svg>

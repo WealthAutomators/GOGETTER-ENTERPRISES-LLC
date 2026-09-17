@@ -1,20 +1,16 @@
-import {
-  Feature,
-  HeroSlide,
-  PromoBanner,
-} from "@/types";
+import { Feature, HeroSlide, PromoBanner } from "@/types";
 
 export const heroSlides: HeroSlide[] = [
   {
     id: "1",
     image: "/hero/hero-1.jpg",
-    headline: "Everything Your Home Needs, All in One Place.",
+    headline: "Gear for a full day, not a photoshoot.",
     description:
-      "Shop electronics, home essentials, toys, beauty products, kitchen accessories and more at prices you'll love.",
-    ctaText: "Shop Collection",
+      "Contemporary products for work, travel, home, and time outside — chosen because they get used.",
+    ctaText: "Shop the collection",
     ctaLink: "/shop",
-    secondaryCtaText: "Today's Deals",
-    secondaryCtaLink: "/shop?sale=true",
+    secondaryCtaText: "See what’s new",
+    secondaryCtaLink: "/new-arrivals",
   },
 ];
 
@@ -22,123 +18,198 @@ export const features: Feature[] = [
   {
     id: "1",
     icon: "truck",
-    title: "Fast Shipping",
-    description: "Free shipping on orders over $75. Delivered in 3–5 business days.",
+    title: "Free shipping over $75",
+    description: "Standard delivery in 3–5 business days on qualifying orders.",
   },
   {
     id: "2",
     icon: "shield",
-    title: "Secure Checkout",
-    description: "Your payment information is protected with industry-standard encryption.",
+    title: "Secure checkout",
+    description: "Encrypted payment on every demo order.",
   },
   {
     id: "3",
     icon: "rotate",
-    title: "Easy Returns",
-    description: "Hassle-free 30-day returns on most items. We make it simple.",
+    title: "30-day returns",
+    description: "Send unused items back in original packaging.",
   },
   {
     id: "4",
     icon: "headphones",
-    title: "Customer Support",
-    description: "Our friendly team is available Mon–Fri to help with orders and questions.",
-  },
-  {
-    id: "5",
-    icon: "star",
-    title: "Trusted Quality",
-    description: "Every product is carefully selected for quality, value, and reliability.",
+    title: "Straightforward support",
+    description: "Use the contact form and we will follow up.",
   },
 ];
+
+export const homepageFeaturedSlugs = [
+  "daily-transit-backpack",
+  "aluminum-laptop-riser",
+  "french-terry-hoodie",
+  "commute-travel-tumbler",
+  "ceramic-table-lamp",
+  "studio-grip-mat",
+  "hardcover-field-notebook",
+  "everyday-cast-skillet",
+] as const;
 
 export const dealsEndTime = new Date(Date.now() + 1000 * 60 * 60 * 18).toISOString();
 
 export const homepageDealsSlugs = [
-  "wireless-earbuds",
-  "electric-kettle",
-  "air-fryer",
-  "dog-bed",
-  "bath-towel-set",
-  "sunglasses-classic",
-] as const;
-
-export const homepageBestsellerSlugs = [
-  "wireless-earbuds",
-  "bluetooth-speaker",
-  "bath-towel-set",
-  "yoga-mat",
-  "kids-learning-tablet",
-  "coffee-grinder",
-  "dog-bed",
-  "electric-kettle",
-] as const;
-
-export const homepageFeaturedSlugs = [
-  "wireless-earbuds",
-  "electric-kettle",
-  "bath-towel-set",
-  "kids-learning-tablet",
-  "standing-desk-lamp",
-  "air-fryer",
-  "yoga-mat",
-  "dog-bed",
-  "coffee-grinder",
-  "bluetooth-speaker",
+  "compact-type-keyboard",
+  "knit-studio-throw",
+  "pour-over-brew-set",
+  "compact-kettlebell",
+  "packable-rain-shell",
+  "everyday-polarized-shades",
 ] as const;
 
 export const homepageNewArrivalSlugs = [
-  "stem-robot-kit",
-  "vitamin-c-serum-set",
-  "baby-monitor",
-  "foam-roller",
+  "frame-capture-camera",
+  "clip-task-light",
+  "arc-floor-lamp",
+  "pour-over-brew-set",
+  "commuter-messenger-bag",
+  "compact-kettlebell",
+  "everyday-court-sneakers",
+  "weekly-desk-planner",
 ] as const;
+
+export const homepageBestsellerSlugs = [
+  "daily-transit-backpack",
+  "pocket-folio-reader",
+  "commute-travel-tumbler",
+  "studio-grip-mat",
+  "french-terry-hoodie",
+  "hardcover-field-notebook",
+  "knit-studio-throw",
+  "compact-led-flashlight",
+] as const;
+
+export const goGetterEditSlugs = [
+  "daily-transit-backpack",
+  "aluminum-laptop-riser",
+  "field-wristwatch",
+] as const;
+
+export const secondaryCollectionSlugs = [
+  "weekend-holdall",
+  "insulated-trail-bottle",
+  "packable-rain-shell",
+  "slim-passport-sleeve",
+] as const;
+
+export const utilityFeatureSlugs = [
+  "aluminum-laptop-riser",
+  "weekly-desk-planner",
+  "commute-travel-tumbler",
+] as const;
+
+export const lifestyleTiles = [
+  {
+    id: "workday",
+    title: "Workday",
+    description: "Desk tools, lighting, and carry that keep a day on track.",
+    href: "/categories/workspace",
+    image: "/lifestyle/workday.jpg",
+  },
+  {
+    id: "move",
+    title: "On the move",
+    description: "Bags, bottles, and compact kit for commutes and trips.",
+    href: "/categories/travel",
+    image: "/lifestyle/on-the-move.jpg",
+  },
+  {
+    id: "home",
+    title: "At home",
+    description: "Lighting, textiles, and kitchen pieces for a well-run space.",
+    href: "/categories/home",
+    image: "/lifestyle/at-home.jpg",
+  },
+  {
+    id: "train",
+    title: "Train",
+    description: "Mats, recovery, and compact weights for regular sessions.",
+    href: "/categories/fitness",
+    image: "/lifestyle/train.jpg",
+  },
+  {
+    id: "weekend",
+    title: "Weekend",
+    description: "Outdoor lighting, bottles, and trail-ready footwear.",
+    href: "/categories/outdoor",
+    image: "/lifestyle/weekend.jpg",
+  },
+  {
+    id: "essentials",
+    title: "Essentials",
+    description: "Apparel, accessories, and daily care with a clean finish.",
+    href: "/categories/apparel",
+    image: "/lifestyle/essentials.jpg",
+  },
+];
 
 export const promotionalBanner: PromoBanner = {
   id: "1",
-  title: "Upgrade Your Everyday Living",
+  title: "Pack for the next stretch of road.",
   description:
-    "Discover premium products for every room in your home, from smart electronics to comfortable essentials, all in one place.",
-  buttonText: "Shop Deals",
-  buttonLink: "/shop?sale=true",
-  image: "/banners/featured.jpg",
+    "Weekender bags, rain shells, and bottles built for days that don’t stay in one place.",
+  buttonText: "Shop travel",
+  buttonLink: "/categories/travel",
+  image: "/banners/editorial.jpg",
 };
 
 export const aboutSection = {
-  title: "Shopping Made Easy.",
+  title: "Useful things, chosen with intent.",
   description:
-    "AAM Partners LLC brings together quality products across multiple categories, helping families find everything they need in one trusted online marketplace. We focus on affordability, reliability, and a smooth shopping experience from browsing to checkout.",
+    "GOGETTER ENTERPRISES LLC exists to put practical, well-designed products in one place. We favor pieces that earn their keep — at a desk, in a bag, in the kitchen, or on the way out the door — without turning everyday shopping into a slogan.",
   checklist: [
-    "Wide selection across 12+ categories",
-    "Competitive prices on everyday essentials",
-    "Fast, reliable shipping nationwide",
-    "Dedicated customer support team",
+    "A catalog built around use, not novelty",
+    "Clear product details and honest photography",
+    "Straightforward shipping and returns",
+    "A store that stays easy to navigate",
   ],
-  buttonText: "Learn More About Us",
+  buttonText: "Read the brand story",
   buttonLink: "/about",
   image: "/banners/about.jpg",
 };
 
 export const featuredCollection = {
-  title: "Featured Products",
-  description:
-    "Hand-picked favorites across electronics, home, beauty, and more — everything you need in one marketplace.",
+  title: "Featured collection",
+  description: "A cross-section of what people actually reorder: carry, workspace, home, and daily wear.",
   bannerImage: "/banners/featured.jpg",
-  categorySlug: "electronics",
+  categorySlug: "travel",
+};
+
+export const utilityFeature = {
+  title: "Everyday utility, minus the clutter.",
+  description:
+    "A laptop riser, a planner that starts whenever you do, and a tumbler that survives the commute. Small upgrades that show up five days a week.",
+  image: "/banners/utility.jpg",
+  ctaText: "Shop workspace",
+  ctaLink: "/categories/workspace",
+};
+
+export const promoStrip = {
+  title: "Free standard shipping on orders over $75",
+  description: "30-day returns on unused items. No countdown clocks, no invented scarcity.",
+  ctaText: "Shop now",
+  ctaLink: "/shop",
 };
 
 export const bestSellerTabs = [
   { label: "All", slug: "all" },
-  { label: "Electronics", slug: "electronics" },
-  { label: "Home & Kitchen", slug: "home-kitchen" },
-  { label: "Beauty", slug: "beauty" },
-  { label: "Sports", slug: "sports-outdoors" },
+  { label: "Travel", slug: "travel" },
+  { label: "Workspace", slug: "workspace" },
+  { label: "Apparel", slug: "apparel" },
+  { label: "Fitness", slug: "fitness" },
 ];
 
 export const newsletter = {
-  title: "Get Exclusive Deals Before Everyone Else",
-  description: "Subscribe for discounts, new arrivals, and weekly offers.",
-  placeholder: "Enter your email address",
-  buttonText: "Subscribe",
+  title: "New drops, no noise.",
+  description: "Occasional notes on new arrivals and useful restocks. Unsubscribe anytime.",
+  placeholder: "Email address",
+  buttonText: "Join",
 };
 
 export const sortOptions = [
@@ -147,4 +218,10 @@ export const sortOptions = [
   { value: "price-asc", label: "Price: Low to High" },
   { value: "price-desc", label: "Price: High to Low" },
   { value: "rating", label: "Top Rated" },
+];
+
+export const utilityBarItems = [
+  "Free shipping over $75",
+  "30-day returns",
+  "The Go-Getter Edit is live",
 ];

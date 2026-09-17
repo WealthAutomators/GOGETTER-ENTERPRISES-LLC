@@ -1,22 +1,9 @@
 export const company = {
-  name: "AAM Partners LLC",
-  tagline: "Everything You Need. Delivered with Confidence.",
+  name: "GOGETTER ENTERPRISES LLC",
+  shortName: "GOGETTER",
+  legalName: "GOGETTER ENTERPRISES LLC",
+  tagline: "Built for the way you actually live.",
   description:
-    "AAM Partners LLC brings together quality products across multiple categories, helping families find everything they need in one trusted online marketplace.",
-  email: "aampartnersllc1@gmail.com",
-  address: {
-    street: "717 S Military Hwy",
-    city: "Virginia Beach",
-    state: "VA",
-    zip: "23464",
-    country: "United States",
-  },
-  social: {
-    instagram: "https://instagram.com/aampartnersllc",
-    facebook: "https://facebook.com/aampartnersllc",
-    twitter: "https://twitter.com/aampartnersllc",
-    pinterest: "https://pinterest.com/aampartnersllc",
-  },
-  hours: "Mon–Fri: 9am–6pm EST",
-  copyright: `© ${new Date().getFullYear()} AAM Partners LLC. All rights reserved.`,
+    "GOGETTER ENTERPRISES LLC is a contemporary retailer of useful everyday products — workspace tools, travel gear, home essentials, apparel, and practical design for people who like to keep moving.",
+  copyright: `© ${new Date().getFullYear()} GOGETTER ENTERPRISES LLC. All rights reserved.`,
 };

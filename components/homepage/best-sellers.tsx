@@ -16,12 +16,16 @@ export function BestSellers() {
   const filtered =
     activeTab === "all"
       ? curatedBestsellers
-      : bestsellers.filter((p) => p.categorySlug === activeTab).slice(0, 4);
+      : bestsellers.filter((p) => p.categorySlug === activeTab).slice(0, 8);
 
   return (
-    <section className="py-12 md:py-16">
+    <section className="bg-background py-14 md:py-20">
       <Container>
-        <SectionHeading title="Best Sellers" viewMoreLink="/best-sellers" />
+        <SectionHeading
+          eyebrow="Proven"
+          title="Best sellers"
+          viewMoreLink="/best-sellers"
+        />
 
         <div className="mb-8 flex flex-wrap gap-2">
           {bestSellerTabs.map((tab) => (
@@ -29,10 +33,10 @@ export function BestSellers() {
               key={tab.slug}
               onClick={() => setActiveTab(tab.slug)}
               className={cn(
-                "rounded-full px-5 py-2 text-sm font-medium transition-colors",
+                "rounded-full px-5 py-2 text-xs font-bold uppercase tracking-[0.14em] transition-colors",
                 activeTab === tab.slug
                   ? "bg-primary text-white"
-                  : "bg-muted text-muted-foreground hover:text-foreground"
+                  : "bg-white text-muted-foreground hover:text-foreground"
               )}
             >
               {tab.label}

@@ -21,9 +21,9 @@ export function StarRating({ rating, reviews, size = "sm", showCount = true, cla
             className={cn(
               starSize,
               i < Math.floor(rating)
-                ? "fill-accent text-accent"
+                ? "fill-foreground text-foreground"
                 : i < rating
-                  ? "fill-accent/50 text-accent"
+                  ? "fill-foreground/50 text-foreground"
                   : "fill-muted text-muted"
             )}
           />

@@ -7,10 +7,10 @@ import { Button } from "@/components/ui/button";
 
 export function AboutSection() {
   return (
-    <section className="py-12 md:py-16">
+    <section className="bg-background py-14 md:py-20">
       <Container>
-        <div className="grid items-center gap-10 md:grid-cols-2 lg:gap-16">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-border shadow-sm">
+        <div className="grid items-stretch gap-0 overflow-hidden border border-border md:grid-cols-2">
+          <div className="relative min-h-[280px] md:min-h-[440px]">
             <Image
               src={aboutSection.image}
               alt={aboutSection.title}
@@ -19,8 +19,11 @@ export function AboutSection() {
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
-          <div>
-            <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">{aboutSection.title}</h2>
+          <div className="flex flex-col justify-center bg-white px-6 py-10 md:px-12 md:py-16">
+            <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-primary">Brand</p>
+            <h2 className="font-display mt-3 text-3xl font-bold tracking-tight md:text-4xl">
+              {aboutSection.title}
+            </h2>
             <p className="mt-4 leading-relaxed text-muted-foreground">{aboutSection.description}</p>
             <ul className="mt-6 space-y-3">
               {aboutSection.checklist.map((item) => (
@@ -30,7 +33,7 @@ export function AboutSection() {
                 </li>
               ))}
             </ul>
-            <Button asChild size="lg" className="mt-8">
+            <Button asChild size="lg" className="mt-8 w-fit">
               <Link href={aboutSection.buttonLink}>{aboutSection.buttonText}</Link>
             </Button>
           </div>

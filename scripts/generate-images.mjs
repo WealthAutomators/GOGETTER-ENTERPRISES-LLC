@@ -5,8 +5,8 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const colors = {
-  primary: "#7C3AED",
-  accent: "#F59E0B",
+  primary: "#1E54F4",
+  accent: "#1E54F4",
   light: "#FAFAFA",
   gray: "#E5E7EB",
   white: "#FFFFFF",
@@ -25,14 +25,14 @@ function createLogo() {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="220" height="44" viewBox="0 0 220 44" fill="none">
   <defs>
     <linearGradient id="logo-mark-bg" x1="2" y1="2" x2="38" y2="42" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#8B5CF6"/>
-      <stop offset="1" stop-color="#6D28D9"/>
+      <stop stop-color="#1E54F4"/>
+      <stop offset="1" stop-color="#1746D4"/>
     </linearGradient>
   </defs>
   <rect x="0" y="2" width="40" height="40" rx="10" fill="url(#logo-mark-bg)"/>
   <rect x="6" y="30" width="28" height="3.5" rx="1.75" fill="${colors.accent}"/>
-  <text x="20" y="21" text-anchor="middle" dominant-baseline="middle" fill="${colors.white}" font-family="system-ui, sans-serif" font-size="14" font-weight="800" letter-spacing="-0.7">AAM</text>
-  <text x="50" y="19" fill="#6D28D9" font-family="system-ui, sans-serif" font-size="17" font-weight="800" letter-spacing="-0.4">AAM Partners</text>
+  <text x="20" y="21" text-anchor="middle" dominant-baseline="middle" fill="${colors.white}" font-family="system-ui, sans-serif" font-size="14" font-weight="800" letter-spacing="-0.7">G</text>
+  <text x="50" y="19" fill="#0F1419" font-family="system-ui, sans-serif" font-size="17" font-weight="800" letter-spacing="-0.4">GOGETTER</text>
   <text x="50" y="34" fill="${colors.accent}" font-family="system-ui, sans-serif" font-size="10" font-weight="700" letter-spacing="2.2">LLC</text>
 </svg>`;
 }
@@ -59,7 +59,7 @@ heroItems.forEach((item) => {
 
 const bannerItems = [
   { name: "promo-1.svg", label: "Upgrade Your Living", sub: "Shop Deals", bg: colors.primary, textColor: colors.white },
-  { name: "about.svg", label: "Shopping Made Easy", sub: "AAM Partners LLC", bg: "#F3E8FF" },
+  { name: "about.svg", label: "Useful products. Modern living.", sub: "GOGETTER ENTERPRISES LLC", bg: "#EEF1F5" },
   { name: "featured.svg", label: "Featured Products", sub: "Marketplace Favorites", bg: colors.primary, textColor: colors.white },
 ];
 fs.mkdirSync(path.join(root, "banners"), { recursive: true });
